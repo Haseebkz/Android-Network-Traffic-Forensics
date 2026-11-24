@@ -1,0 +1,33 @@
+# Raw captures (large + may contain personal data)
+captures/raw/*
+!captures/raw/.gitkeep
+*.pcap
+*.pcapng
+!captures/samples/*.pcap
+!captures/samples/*.pcapng
+
+# MaxMind GeoLite2 (license: do not redistribute; download locally)
+*.mmdb
+
+# Script output
+forensics_out/
+results/*
+!results/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets / decryption keys
+sslkeylog.txt
+*.key
+*.pem
+.env
